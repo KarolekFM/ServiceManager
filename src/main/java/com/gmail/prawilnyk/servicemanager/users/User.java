@@ -9,6 +9,7 @@ import lombok.Setter;
 public class User {
 
     private final UUID uniqueId;
+    private UserPermissions userPermissions;
 
     public User(UUID uniqueId) {
         this.uniqueId = uniqueId;
