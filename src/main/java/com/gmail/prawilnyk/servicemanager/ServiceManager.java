@@ -6,6 +6,9 @@ import org.diorite.config.ConfigManager;
 
 public class ServiceManager {
 
+    private static ServiceManager INSTANCE;
+
+
     private final AppConfig config;
 
     public ServiceManager() {
@@ -17,7 +20,11 @@ public class ServiceManager {
 
 
     public static void main(String[] args) {
-        new ServiceManager();
+        ServiceManager.INSTANCE = new ServiceManager();
+    }
+
+    public static ServiceManager getINSTANCE() {
+        return INSTANCE;
     }
 
 }
