@@ -45,7 +45,7 @@ public class ServiceManager {
         ServiceManager.INSTANCE = new ServiceManager();
     }
 
-    public static ServiceManager getINSTANCE() {
+    public static ServiceManager getInstance() {
         return INSTANCE;
     }
 
