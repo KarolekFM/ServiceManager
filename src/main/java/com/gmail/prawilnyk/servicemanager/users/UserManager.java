@@ -10,6 +10,22 @@ public class UserManager {
 
     private final Map<UUID, User> users = new HashMap<>();
 
+
+    public boolean insertUser(User user) {
+        //TODO wrzucanie usera do bazy
+        return true;
+    }
+
+    public boolean deleteUser(User user) {
+        //TODO usuwanie usera z bazy
+        return true;
+    }
+
+    public boolean updateUser(User user) {
+        //TODO update usera w bazie
+        return true;
+    }
+
     public User getUser(UUID uniqueId) {
         return users.get(uniqueId);
     }
